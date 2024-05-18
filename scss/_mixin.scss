@@ -1,0 +1,30 @@
+
+
+@mixin reset{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin footer-general{
+    background-color: $color-header;
+    color: whitesmoke;
+    font-family:"Raleway", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    gap: 10px;
+}
+
+@mixin header-general{
+    background-color: $color-header;
+    color: whitesmoke;
+    font-family:"Raleway", sans-serif;
+    font-size: 15px;
+}
+
+@mixin main-general{
+    color: whitesmoke;
+    font-family:"Raleway", sans-serif;
+    font-size: 20px;
+    background-color: $Color-fondo;
+}

@@ -1,0 +1,296 @@
+/*imports*/
+/*reset*/
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*estilos generales*/
+body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+body .titulo {
+  font-size: 40px;
+}
+body header {
+  background-color: #0BB3D9;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+body main {
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background-color: black;
+}
+body footer {
+  background-color: #0BB3D9;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  gap: 10px;
+}
+
+/*estilos mobile home*/
+header {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+main .titulo {
+  text-align: center;
+  margin: 20px;
+}
+main .parrafo {
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+}
+main .imagen-banda {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5px;
+}
+footer p {
+  margin: 5px;
+  padding: 0;
+}
+
+/*estilos galeria*/
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 20%);
+  gap: 10px;
+  margin: 15px;
+  padding: 5px;
+  align-content: center;
+}
+main .contenedor2 {
+  display: none;
+}
+
+/*estilos videos*/
+main .container {
+  margin: auto;
+  place-content: center;
+  place-items: center;
+}
+main .container .h1-style {
+  margin-bottom: 15px;
+}
+main .videos-contenedor {
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  place-content: center;
+  place-items: center;
+}
+
+/*estilos discografia*/
+main .titulo {
+  margin-bottom: 50px;
+}
+main .parrafo-2 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+main .contenedor-spotify {
+  margin: 10px;
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+}
+
+/* estilos de contacto*/
+main .titulo {
+  text-align: center;
+  font-size: 25px;
+}
+main .subtitulo {
+  color: whitesmoke;
+  font-size: 35px;
+}
+main form {
+  padding: 50px 55px;
+  box-shadow: 0 0 2opx rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 340px;
+  justify-content: center;
+}
+main form .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 100%;
+}
+main form label {
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+main form input {
+  background-color: #0BB3D9;
+}
+main form textarea {
+  padding: 17px 25px;
+  max-width: 100%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #0BB3D9;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  outline: none;
+}
+main .form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+main .form-txt a {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+main .btn {
+  font-size: 16px;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+main .btn:hover {
+  color: #0BB3D9;
+}
+
+/* mq de tablet*/
+@media screen and (min-width: 600px) {
+  /*estilos de nav*/
+  header nav div ul {
+    margin-left: auto;
+  }
+  /* estilos de home*/
+  main .parrafo {
+    text-align: justify;
+  }
+  main .imagen-banda {
+    padding: 12px;
+  }
+  /*estilos de galeria*/
+  main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 15px;
+    padding: 5px;
+    align-content: center;
+  }
+  /*estilos de contacto*/
+  main form {
+    margin-inline: auto;
+  }
+  /*estilos video*/
+  main .videos-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: auto;
+  }
+}
+/*mq de desktop*/
+@media screen and (min-width: 1024px) {
+  /* estilo nav*/
+  header nav div ul {
+    margin-left: auto;
+  }
+  /*estilos home*/
+  main .contenedor-desktop {
+    display: flex;
+    margin: 100px;
+    gap: 40px;
+  }
+  main .parrafo {
+    text-align: justify;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  /*esilos galeria*/
+  main .main-img {
+    display: grid;
+  }
+  main .contenedor1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  main .img6 {
+    grid-column: span 2;
+  }
+  main .contenedor2 {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+  }
+  main .img11 {
+    grid-column: span 2;
+  }
+  /*estilos videos*/
+  main .videos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    padding: 25px;
+    margin: 150px;
+  }
+  main .video-5 {
+    grid-column: span 4;
+  }
+  /*estilos discografia*/
+  main .contenedor-spotify {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 100px;
+    margin: 150px;
+  }
+  /*estilos de contacto*/
+  main form {
+    margin-inline: auto;
+  }
+  main .subtitulo {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
